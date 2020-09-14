@@ -10,10 +10,10 @@ const ChannelList = () => {
         <S.AddCategoryIcon />
       </S.Category>
 
-      <ChannelButton channelName='chat-livre' />
-      <ChannelButton channelName='trabalho' />
-      <ChannelButton channelName='civilization' />
-      <ChannelButton channelName='csgo' />
+      <ChannelButton channelName="chat-livre" />
+      <ChannelButton channelName="trabalho" />
+      <ChannelButton channelName="civilization" />
+      <ChannelButton channelName="csgo" />
     </S.Container>
   )
 }
