@@ -24,6 +24,7 @@ export const Container = styled.div`
   > div span {
     margin-left: 5px;
     color: var(--senary);
+    font-size: 16px;
   }
 
   &:hover,
