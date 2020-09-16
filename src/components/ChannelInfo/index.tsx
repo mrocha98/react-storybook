@@ -1,17 +1,21 @@
 import React from 'react'
-
 import * as S from './styles'
 
-const ChannelInfo = () => {
+export type ChannelInfoProps = {
+  title: string
+  description?: string
+}
+
+const ChannelInfo = ({ title, description }: ChannelInfoProps) => {
   return (
     <S.Container>
       <S.HashtagIcon />
 
-      <S.Title>Chat Livre</S.Title>
+      <S.Title>{title}</S.Title>
 
       <S.Separator />
 
-      <S.Description>Canal aberto para conversas</S.Description>
+      <S.Description>{description}</S.Description>
     </S.Container>
   )
 }

@@ -1,15 +1,19 @@
 import React from 'react'
-
 import * as S from './styles'
 
-const UserInfo = () => {
+export type UserInfoProps = {
+  name: string
+  tag: string
+}
+
+const UserInfo = ({ name, tag }: UserInfoProps) => {
   return (
     <S.Container>
       <S.Profile>
         <S.Avatar />
         <S.UserData>
-          <strong>m̵͙̣͗̄͛̈́e̵̢̗̣̅̓ṅ̸̟̻̱͓͝d̸̡͖̈̇ͅĭ̵̪̈́g̴͚͓͑̑o̶͌ͅ</strong>
-          <span>#2689</span>
+          <strong>{name}</strong>
+          <span>{tag}</span>
         </S.UserData>
       </S.Profile>
 
