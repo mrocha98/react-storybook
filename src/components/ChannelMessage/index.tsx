@@ -9,18 +9,22 @@ export type ChannelMessageProps = {
   isBot?: boolean
 }
 
-const ChannelMessage = ({ isBot }: ChannelMessageProps) => {
+export { Mention } from './styles'
+
+const ChannelMessage = ({ author, date, content, hasMention, isBot }: ChannelMessageProps) => {
   return (
-    <S.Container>
-      <S.Avatar />
+    <S.Container className={hasMention ? 'mention' : ''}>
+      <S.Avatar className={isBot ? 'bot' : ''} />
 
       <S.Message>
         <S.Header>
-          <strong>Guilherme Rodz</strong>
+          <strong>{author}</strong>
 
-          {isBot && <span>Bot</span>}
+          {isBot && <span className="bot">Bot</span>}
+
+          <time>{date}</time>
         </S.Header>
-        <S.Content>@Zap</S.Content>
+        <S.Content>{content}</S.Content>
       </S.Message>
     </S.Container>
   )
