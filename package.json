@@ -60,12 +60,7 @@
     "typescript": "~4.0.2"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
-    "@storybook/addon-info": "^5.3.21",
-    "@storybook/addon-knobs": "^6.0.21",
-    "@storybook/addon-links": "^6.0.21",
-    "@storybook/addons": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
     "@types/faker": "^5.1.0",
@@ -73,6 +68,7 @@
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
     "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.11.1",
     "commitizen": "^4.2.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint-config-standard": "^14.1.1",
@@ -83,7 +79,6 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.3.0",
-    "lint-staged": "^10.3.0",
-    "npm-check-updates": "^9.0.1"
+    "lint-staged": "^10.3.0"
   }
 }
